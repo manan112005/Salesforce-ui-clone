@@ -49,4 +49,4 @@ You can host this project using GitHub Pages.
 
 ## 👨‍💻 Author
 
-Your Name
+MANAN PATEL

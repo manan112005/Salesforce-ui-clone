@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+}
+
+/* Header */
+#header{
+    height: 13%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+#Logo{
+    height: 70%;
+}
+#Logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.texts{
+    color: rgb(2, 2, 84);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.texts:hover{
+    color: rgb(62, 204, 251);
+}
+#contactDetails{
+    text-align: center;
+    font-weight: lighter;
+}
+.icon{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: lightblue;
+}
+#Login{
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+#Login:hover{
+    background-color: lightblue;
+}
+#try{
+    background-color: green;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#try:hover{
+    background-color: rgb(7, 44, 7);
+}
+#fakeHeader{
+    height: 13vh;
+    width: 100%;
+}
+
+/* Page 1 */
+#page1{
+    height: calc(100vh - 13vh);
+    width: 100%;
+    overflow: hidden;
+}
+#strip{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(0, 0, 131);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#content{
+    height: 68%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    gap: 30px;
+}
+#box1{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#box1 h1{
+    font-weight: 600;
+    color: rgb(0, 0, 80);
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+#box1 p{
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+#btns{
+    display: flex;
+    gap: 20px;
+}
+#btn1, #btn2{
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+#btn1{
+    background-color: rgb(89,213,255);
+    color: white;
+}
+#btn1:hover{
+    background-color: rgb(0, 66, 88);
+}
+#btn2{
+    color: #0176d3;
+    border: 2px solid #0176d3;
+}
+#btn2:hover{
+    background-color: lightblue;
+}
+#box2{
+    width: 48%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#box2 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#heading{
+    height: 16%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 94);
+}
+#heading h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Page 2 */
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 50px 80px;
+    background-color: #eaf5fe;
+    background-image: url("https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2023/03/products-bg.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 23%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card-top{
+    height: 180px;
+    background: linear-gradient(to right, #d9f3ff, #d9fff5, #ffe8f1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-top img{
+    width: 90px;
+    height: 90px;
+    background: white;
+    padding: 18px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card h2{
+    color: rgb(0, 0, 94);
+    font-size: 32px;
+    margin: 30px 25px 15px;
+}
+.card p{
+    font-size: 24px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 25px 25px;
+}
+.card a{
+    display: inline-block;
+    margin: 0 25px 30px;
+    color: rgb(0, 0, 94);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#viewProducts{
+    text-align: center;
+    margin-top: 60px;
+}
+#viewProducts button{
+    padding: 18px 45px;
+    font-size: 24px;
+    color: #0176d3;
+    background-color: white;
+    border: 2px solid #0176d3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#viewProducts button:hover{
+    background-color: #eaf5fe;
+}
